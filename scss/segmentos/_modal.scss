@@ -1,18 +1,19 @@
-//var
+//Modal
 
 $color_mod_text:#0e023b;
 $color_mod_black: black;
 $c:rgb(201, 29, 29);
 
-// .colorsito{
-//     background: $c;
-//     &:hover{
-//         background: darken($c,0.1%);
-//     }
-// }
+.disp_none{
+    display: none;
+}
+
+.disp_flex{
+    display: flex;
+}
 
 .modal {
-    display: flex;
+    
     position: fixed; 
     z-index: 1500; 
     left: 0;
@@ -36,7 +37,8 @@ padding: 0;
 /* border: 5px solid rgb(81, 255, 0); */
 /* border-radius:1% 95% 1% 95% / 95% 5% 95% 5%; */
 /* border-radius:1% 95% 1% 95% ; */
-border-radius:15% .5% 15% 1%;
+// border-radius:15% .5% 15% 1%;
+border-radius: 5% 5% 5% 5%;
 width: 90%;
 min-height: 500px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -73,12 +75,6 @@ font-weight: bold;
 
 }
 
-// .close:hover, .close:focus {
-//         color: $color_mod_black;
-//         text-decoration: none;
-//         cursor: pointer;
-//     }
-
 .modal-header {
 /* padding: 2px 16px; */
 width: 90%;
@@ -99,11 +95,11 @@ margin: 0;
 padding: 0;
 width: 40%;
 min-height: 500px;
-background: #ff00cc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #ff00cc;
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+background: linear-gradient(to right, #333399, #ff00cc); 
 /* border-radius:39% 61% 100% 0% / 45% 53% 47% 55%  */
-border-radius: 15% 0 0 1%;
+border-radius: 5% 0 0 5%;
 box-shadow: 10px 0 8px 0 rgba(160, 17, 226, 0.4), 10px 20px 50px 0 rgba(178, 13, 255, 0.9);
 }
 .modal-body .modal_left{

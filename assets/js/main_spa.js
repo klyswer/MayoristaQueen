@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
-// modal script
+// $('#myBtn').click(function(){
+//   alert("llegue");
+// });
 
+// modal script
+var modal =$('.modal'); 
 // abrir modal
 $('#myBtn').click(function(){
   $('.modal').removeClass('disp_none');
@@ -15,11 +19,11 @@ $('.close').click(function(){
 });
 
 // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 // Slick

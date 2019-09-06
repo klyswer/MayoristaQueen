@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="assets/css/main_spa.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="assets/css/main_spa.css"/> -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <!-- slick.js -->
         <link rel="stylesheet" type="text/css" href="./Library/slick/slick.css">
@@ -12,6 +13,161 @@
         
         <title>Comercializadora Queen</title>
     </head>
+    <style>
+    /* Basic */
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #f0f4f4;
+		color: #5b5b5b;
+		font-size: 15pt;
+		line-height: 1.85em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+	input, textarea, select {
+		font-size: 15pt;
+		line-height: 1.85em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+		color: #483949;
+		line-height: 1.25em;
+	}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom-color: transparent;
+	}
+
+	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 2.85em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1em;
+		margin: 0 0 0.25em 0;
+	}
+
+	strong, b {
+		font-weight: 400;
+		color: #483949;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	a {
+		color: inherit;
+		border-bottom: solid 1px rgba(128, 128, 128, 0.15);
+		text-decoration: none;
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	}
+
+		a:hover {
+			color: #ef8376;
+			border-bottom-color: transparent;
+		}
+
+	sub {
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+
+	sup {
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+
+	blockquote {
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+
+	p, ul, ol, dl, table {
+		margin-bottom: 1em;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	br.clear {
+		clear: both;
+	}
+
+	hr {
+		position: relative;
+		display: block;
+		border: 0;
+		top: 4.5em;
+		margin-bottom: 9em;
+		height: 6px;
+		border-top: solid 1px rgba(128, 128, 128, 0.2);
+		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+	}
+
+		hr:before, hr:after {
+			content: '';
+			position: absolute;
+			top: -8px;
+			display: block;
+			width: 1px;
+			height: 21px;
+			background: rgba(128, 128, 128, 0.2);
+		}
+
+		hr:before {
+			left: -1px;
+		}
+
+		hr:after {
+			right: -1px;
+		}
+
+	.timestamp {
+		color: rgba(128, 128, 128, 0.75);
+		font-size: 0.8em;
+	}
+    </style>
 <body>
 <!-- Header -->
     <div class="header d-flex justify-r align-c">
@@ -43,9 +199,9 @@
                   
               </div>
 
-              <div class="item-menu d-flex justify-c align-c f_flow_col" >
+              <div class="item-menu d-flex justify-c align-c f_flow_col" id="myBtn">
                   <div id="myBtn">Contáctenos</div>
-                  <img src="images/send.svg" width="40px" alt="">
+                  <img id="myBtn" src="images/send.svg" width="40px" alt="">
               </div>
 
               <div class="item-menu d-flex justify-c align-c f_flow_col" >
@@ -60,20 +216,43 @@
 <!-- Modal content -->
 <!-- The Modal -->
 <div id="myModal" class="modal disp_none">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <!-- <h2>Estamos esperando su consulta</h2> -->
+        </div>
+
+        <div class="modal-body">
+            <div class="modal_rigth d-flex justify-c">
+              <form action="" class="formulario" name="form_contacto" method="POST">
+                <div>
+                  <div class="inpunt_group">
+                    <input type="text" id="name" name="name">
+                    <label for="name">Nombre</label>
+                  </div>
+                  <div class="inpunt_group">
+                    <input type="email" id="email" name="email">
+                    <label for="email">Correo electronico</label>
+                  </div>
+                  <div class="inpunt_group">
+                    <input type="text" id="cel" name="cel">
+                    <label for="cel">Teléfono</label>
+                  </div>
+                  <div class="inpunt_box">
+                    <input type="text" id="" name="">
+                    <label for="">Nombre</label>
+                  </div>
+                  <input type="submit" id="btn_submit" value="consultar">
+                </div>
+              </form>
+            </div>
+            <div class="modal_left">
+            </div>
+        </div>        
     </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-    <button type="submit">Enviar</button>
-  </div>
+
 </div>
 <!-- Slider -->
     <div class="slider">
