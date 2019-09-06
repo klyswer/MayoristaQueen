@@ -1,0 +1,157 @@
+.header {
+  background: #343434; }
+
+.header div {
+  font-size: 80%;
+  font-weight: 600;
+  color: aliceblue; }
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(34, 9, 63, 0.6); }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  /* border: 5px solid rgb(81, 255, 0); */
+  /* border-radius:1% 95% 1% 95% / 95% 5% 95% 5%; */
+  /* border-radius:1% 95% 1% 95% ; */
+  border-radius: 15% .5% 15% 1%;
+  width: 90%;
+  min-height: 500px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+/* The Close Button */
+.close {
+  color: #0e023b;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+
+.modal-header {
+  /* padding: 2px 16px; */
+  width: 90%;
+  /* background-color: $color_mod_text; */
+  color: #0e023b; }
+
+.modal-body {
+  /* padding: 2px 16px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.modal-body .modal_rigth {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  min-height: 500px;
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#333399), to(#ff00cc));
+  background: -webkit-linear-gradient(left, #333399, #ff00cc);
+  background: -o-linear-gradient(left, #333399, #ff00cc);
+  background: linear-gradient(to right, #333399, #ff00cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* border-radius:39% 61% 100% 0% / 45% 53% 47% 55%  */
+  border-radius: 15% 0 0 1%;
+  -webkit-box-shadow: 10px 0 8px 0 rgba(160, 17, 226, 0.4), 10px 20px 50px 0 rgba(178, 13, 255, 0.9);
+  box-shadow: 10px 0 8px 0 rgba(160, 17, 226, 0.4), 10px 20px 50px 0 rgba(178, 13, 255, 0.9); }
+
+.modal-body .modal_left {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  min-height: 500px; }
+
+.modal-footer {
+  color: #0e023b; }
+
+.inpunt_group {
+  margin-bottom: 10px; }
+  .inpunt_group input[type="text"], .inpunt_group [type="email"] {
+    font-size: 14px;
+    outline: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: #31023b 2px solid;
+    width: 100%; }
+    .inpunt_group input[type="text"]:active, .inpunt_group input[type="text"]:focus, .inpunt_group [type="email"]:active, .inpunt_group [type="email"]:focus {
+      outline: none;
+      background: transparent;
+      border-bottom: #31023b 2px solid; }
+
+.btn_pri {
+  display: inline-block;
+  text-decoration: none;
+  padding: .5em 1em;
+  color: white;
+  background: #0059ff; }
+  .btn_pri:hover {
+    background: rgba(0, 89, 255, 0.6); }
+
+.btn_sec {
+  display: inline-block;
+  text-decoration: none;
+  padding: .5em 1em;
+  color: white;
+  background: #c300ff; }
+  .btn_sec:hover {
+    background: rgba(195, 0, 255, 0.6); }

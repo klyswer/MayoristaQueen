@@ -1,0 +1,44 @@
+// Elaborado por Klyswer Oliva, estructura de estilos
+
+// Segmento de modulos estilos scss
+
+@import 'segmentos/header';
+@import 'segmentos/menu';
+@import 'segmentos/slider';
+@import 'segmentos/beneficios';
+@import 'segmentos/productos';
+@import 'segmentos/ofertas';
+@import 'segmentos/footer';
+@import 'segmentos/modal';
+@import 'segmentos/mixings';
+
+// variables
+$color1:rgba(0, 89, 255, 1);
+$color1_o:rgba(0, 89, 255, 0.6);
+$color2: #c300ff;
+$color2_o: rgba(195, 0, 255, 0.6);
+$color3: #b3ff00;
+$color4: #ff006a;
+$white: white;
+
+// mixings
+
+
+
+
+// Temas
+
+
+
+
+
+
+// Elenmentos generales
+
+.btn_pri{
+@include btn($color1,$color1_o);
+}
+
+.btn_sec{
+    @include btn($color2,$color2_o);
+}
