@@ -3,42 +3,22 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="90px" height="90px" viewBox="275 195 90 90" enable-background="new 275 195 90 90" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="278.25" y1="240" x2="361.75" y2="240">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="354.75" y1="175" x2="437.25" y2="175" gradientTransform="matrix(1 0 0 -1 -76 415)">
 	<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
 </linearGradient>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="274.25" y1="240" x2="365.75" y2="240">
-	<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-</linearGradient>
-<circle fill="url(#SVGID_1_)" stroke="url(#SVGID_2_)" stroke-width="8" stroke-miterlimit="10" cx="320" cy="240" r="41.75"/>
+<circle fill="url(#SVGID_1_)" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" cx="320" cy="240" r="41.25"/>
 <g>
-	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="291.5854" y1="233.625" x2="347.1504" y2="233.625">
-		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-	</linearGradient>
-	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="291.0854" y1="233.625" x2="347.6504" y2="233.625">
-		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-	</linearGradient>
-	<path fill="url(#SVGID_3_)" stroke="url(#SVGID_4_)" stroke-miterlimit="10" d="M298.532,215.565h41.674
-		c3.834,0,6.944,3.034,6.944,6.773v22.575c0,0.706-0.142,1.376-0.347,2.017l-4.76-4.137c-1.044-1.031-3.144-1.492-4.81-0.83
-		l-8.551-8.533l16.152-12.277l-25.467,13.392l-25.468-13.392l16.153,12.277l-13.358,13.332l16.292-11.342l6.38,4.05l6.385-4.054
-		l10.343,7.204c-1.045,0.828-1.68,2.083-1.68,3.456v2.356c-2.627,0.379-5.726,1.274-8.573,3.253h-27.312
-		c-3.835,0-6.947-3.036-6.947-6.773v-22.573C291.585,218.6,294.697,215.565,298.532,215.565z"/>
+	<path fill="#FFFFFF" d="M297.08,218.169h41.359c3.803,0,6.891,3.087,6.891,6.893v22.975c0,0.719-0.141,1.399-0.343,2.052
+		l-4.725-4.208c-1.036-1.051-3.119-1.521-4.775-0.849l-8.483-8.682l16.031-12.496l-25.276,13.63l-25.274-13.63l16.031,12.496
+		l-13.258,13.568l16.168-11.545l6.333,4.121l6.336-4.123l10.264,7.331c-1.035,0.841-1.666,2.118-1.666,3.518v2.396
+		c-2.606,0.386-5.681,1.298-8.507,3.312H297.08c-3.805,0-6.893-3.088-6.893-6.893v-22.974
+		C290.187,221.256,293.275,218.169,297.08,218.169z"/>
 	<g>
-		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="320.5273" y1="259.0742" x2="351.668" y2="259.0742">
-			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-		</linearGradient>
-		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="320.0278" y1="260.6201" x2="352.168" y2="260.6201">
-			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-		</linearGradient>
-		<path fill="url(#SVGID_5_)" stroke="url(#SVGID_6_)" stroke-miterlimit="10" d="M337.892,246.077v5.496
-			c-7.474,0-17.364,3.529-17.364,21.563c3.268-11.506,7.671-12.39,17.364-12.39v5.583c0,0.431,0.241,0.82,0.648,0.986
-			c0.137,0.055,0.281,0.08,0.422,0.08c0.287,0,0.564-0.107,0.773-0.313l11.614-10.167c0.425-0.416,0.425-1.095,0-1.507
-			l-11.614-10.081c-0.313-0.305-0.786-0.398-1.195-0.232C338.133,245.259,337.892,245.644,337.892,246.077z"/>
+		<path fill="#FFFFFF" d="M336.14,249.223v5.593c-7.414,0-17.233,3.593-17.233,21.943c3.244-11.707,7.614-12.609,17.233-12.609
+			v5.683c0,0.438,0.239,0.833,0.645,1.003c0.137,0.057,0.279,0.084,0.42,0.084c0.282,0,0.561-0.11,0.767-0.32l11.525-10.348
+			c0.423-0.423,0.423-1.112,0-1.535l-11.525-10.26c-0.31-0.309-0.78-0.403-1.187-0.235
+			C336.379,248.389,336.14,248.78,336.14,249.223z"/>
 	</g>
 </g>
 </svg>
