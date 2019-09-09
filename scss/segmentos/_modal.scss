@@ -1,6 +1,7 @@
 //Modal
 
 $color_mod_text:#0e023b;
+
 $color_mod_black: black;
 $c:rgb(201, 29, 29);
 
@@ -61,16 +62,17 @@ to {top:0; opacity:1}
 
 /* The Close Button */
 .close {
+position: relative;
+z-index: 2000;
 color:$color_mod_text;
 float: right;
 font-size: 28px;
 font-weight: bold;
 
     &:hover,&:focus{
-        color: $color_mod_black;
+        color: $c;
         text-decoration: none;
         cursor: pointer;
-
     }
 
 }
@@ -109,13 +111,53 @@ width: 60%;
 min-height: 500px;
 }
 
-
+.formulario{
+    width: 80%;
+    & .input_sets{
+        width: 90%;
+        & input[type="submit"]{
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: solid 2px white;
+            padding: 0.5rem 1rem;
+            // border-radius: 156% 0%/156% 0%;
+            border-radius: 20px;
+            background: transparent;
+            transition: 0.3s;
+                    &:hover{
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    border: inset 3px rgb(188, 255, 3);
+                    color: #bcff03;
+                    box-shadow: 4px 4px 4px 2px rgba(188, 255, 3, 0.2);
+                    // border-radius: 0% 156%/ 0% 156%;
+                    border-radius: 20px;
+                    font-weight: 900;
+                    }
+                }
+    }
+}
 .modal-footer {
 
 color:$color_mod_text;
 }
 
-.inpunt_group{  
+// .input_sets{
+//     & input[type="submit"]{
+//          margin-left: 50%;
+//          transform: translateX(-50%);
+//          border: solid 1px white;
+//          border-radius: 36% 0%/36% 0%;
+//                  &:hover{
+//                  margin-left: 50%;
+//                  transform: translateX(-50%);
+//                  border: solid 1px white;
+//                  border-radius: 36% 0%/36% 0%; 
+//                  }
+//              }
+//  }
+
+.input_group{  
     margin-bottom: 10px;
     & input[type="text"], & [type="email"]{
         font-size: 14px;
@@ -123,7 +165,7 @@ color:$color_mod_text;
         background: none;
         border: none;
         border-radius: 0;
-        border-bottom: #31023b 2px solid;
+        border-bottom: #ffffff 1px solid;
         width: 100%;
         &:active,
         &:focus{
@@ -131,7 +173,8 @@ color:$color_mod_text;
             background: transparent;
             border-bottom: #31023b 2px solid;
         }
-    }
     
+    }
+  
 }
 

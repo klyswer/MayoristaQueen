@@ -31,10 +31,18 @@ $white: white;
 
 .btn_pri{
 @include btn($color1,$color1_o);
-}
+border-radius: 20px;
+font-weight: 200;
+    &:hover{
+        color: white;
+        font-weight: 600;
+        }
+    }
+
 
 .btn_sec{
     @include btn($color2,$color2_o);
+    border-radius: 100%;
 }
 
 // main_spa.css

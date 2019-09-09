@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- <link rel="stylesheet" type="text/css" href="assets/css/main_spa.css"/> -->
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <!-- slick.js -->
@@ -13,162 +13,9 @@
         
         <title>Comercializadora Queen</title>
     </head>
-    <style>
-    /* Basic */
 
-	html {
-		box-sizing: border-box;
-	}
-
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-
-	body {
-		background: #f0f4f4;
-		color: #5b5b5b;
-		font-size: 15pt;
-		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-	}
-
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
-
-	input, textarea, select {
-		font-size: 15pt;
-		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #483949;
-		line-height: 1.25em;
-	}
-
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
-		text-decoration: none;
-		border-bottom-color: transparent;
-	}
-
-	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-		font-weight: 600;
-	}
-
-	h2 {
-		font-size: 2.85em;
-	}
-
-	h3 {
-		font-size: 1.25em;
-	}
-
-	h4 {
-		font-size: 1em;
-		margin: 0 0 0.25em 0;
-	}
-
-	strong, b {
-		font-weight: 400;
-		color: #483949;
-	}
-
-	em, i {
-		font-style: italic;
-	}
-
-	a {
-		color: inherit;
-		border-bottom: solid 1px rgba(128, 128, 128, 0.15);
-		text-decoration: none;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	}
-
-		a:hover {
-			color: #ef8376;
-			border-bottom-color: transparent;
-		}
-
-	sub {
-		position: relative;
-		top: 0.5em;
-		font-size: 0.8em;
-	}
-
-	sup {
-		position: relative;
-		top: -0.5em;
-		font-size: 0.8em;
-	}
-
-	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
-	}
-
-	p, ul, ol, dl, table {
-		margin-bottom: 1em;
-	}
-
-	p {
-		text-align: justify;
-	}
-
-	br.clear {
-		clear: both;
-	}
-
-	hr {
-		position: relative;
-		display: block;
-		border: 0;
-		top: 4.5em;
-		margin-bottom: 9em;
-		height: 6px;
-		border-top: solid 1px rgba(128, 128, 128, 0.2);
-		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
-	}
-
-		hr:before, hr:after {
-			content: '';
-			position: absolute;
-			top: -8px;
-			display: block;
-			width: 1px;
-			height: 21px;
-			background: rgba(128, 128, 128, 0.2);
-		}
-
-		hr:before {
-			left: -1px;
-		}
-
-		hr:after {
-			right: -1px;
-		}
-
-	.timestamp {
-		color: rgba(128, 128, 128, 0.75);
-		font-size: 0.8em;
-	}
-    </style>
 <body>
+  <div id="init"></div>
 <!-- Header -->
     <div class="header d-flex justify-r align-c">
         <div class="m-r-2">Telefono de Contacto +56977124057</div>
@@ -185,11 +32,11 @@
 
               <div class="item-menu d-flex justify-c align-c f_flow_col">
                   <img src="images/home21white.svg" width="40px" alt="">
-                  <a class="" href="">Inicio</a>
+                  <a class="scrolly" href="#init">Inicio</a>
               </div>
               
               <div class="item-menu d-flex justify-c align-c f_flow_col">
-                  <a class="" href="">Productos</a>
+                  <a href="#productos_gal" class="scrolly" href="">Productos</a>
                   <img src="images/shopping-cart1.svg" width="40px" alt="">
               </div>
 
@@ -215,47 +62,130 @@
 
 <!-- Modal content -->
 <!-- The Modal -->
-<div id="myModal" class="modal disp_none">
+<div id="myModal" class="modal disp_none ">
 
     <div class="modal-content">
 
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <!-- <h2>Estamos esperando su consulta</h2> -->
-        </div>
-
         <div class="modal-body">
             <div class="modal_rigth d-flex justify-c">
-              <form action="" class="formulario" name="form_contacto" method="POST">
-                <div>
-                  <div class="inpunt_group">
-                    <input type="text" id="name" name="name">
-                    <label for="name">Nombre</label>
+              <form action="" class="formulario m-b-2" name="form_contacto" method="POST" autocomplete="off">
+                <div class="input_sets">
+                  <div class="input_group m-b">
+					<label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required> 
+                    
                   </div>
-                  <div class="inpunt_group">
-                    <input type="email" id="email" name="email">
-                    <label for="email">Correo electronico</label>
+                  <div class="input_group m-b">
+					<label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="opcional">
+                    
                   </div>
-                  <div class="inpunt_group">
-                    <input type="text" id="cel" name="cel">
-                    <label for="cel">Teléfono</label>
+                  <div class="input_group m-b">
+					<label for="cel">Teléfono</label>
+                    <input type="text" id="cel" name="cel" required>
+                    
                   </div>
-                  <div class="inpunt_box">
+                  <div class="input_box m-b-2">
+					<label for="">Mensaje</label>
                     <input type="text" id="" name="">
-                    <label for="">Nombre</label>
+                    
                   </div>
-                  <input type="submit" id="btn_submit" value="consultar">
+				          <input class="btn_submit" type="submit" id="btn_submit" value="Consultar" aria-placeholder="Desc
+				  riba su consulta en este campo">
                 </div>
               </form>
             </div>
             <div class="modal_left">
+						<div class="modal-header">
+							<span class="close" title="Salir">&times;</span>
+							
+						</div>
+				<div class="container">
+					    <div class="slider">
+							<!-- <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button> -->
+								<section class="slider_center slider">
+										<div>
+											<div class="hero-image">
+												<div class="hero-text">
+												  <h1 style="font-size:50px">Detergentes Queen</h1>
+												  <h3>Distribuidora</h3>
+												  <button class="btn_pri">Conctactanos</button>
+												</div>
+											</div>
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/home2.svg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det1.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det2.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="http://placehold.it/350x100?text=4"> -->
+										  <!-- <img src="images/Det4.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det5.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det6.jpg"> -->
+										</div>
+					
+									  </section>
+									  <!-- <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button> -->
+						</div>
+				</div>
             </div>
         </div>        
     </div>
 
 </div>
 <!-- Slider -->
-    <div class="slider">
+    <div class="slider" id="slider">
 
             <section class="fade slider">
                     <div>
@@ -319,14 +249,15 @@
     </div>
 
 <!-- Carousel Productos -->
-    <div class="Productos d-flex justify-c align-c m-t-4 m-b-4">
-      <h1 class="text_titles">Galería de productos</h1>
+
+    <div class="Productos d-flex justify-c align-c m-t-4 m-b-4" >
+      <h1 class="text_titles" id="productos_gal">Galería de productos</h1>
       
     </div>
 
 <!-- Carousel Ofertas -->
     <div class="ofertas d-flex justify-c align-c m-t-4 m-b-4" id="ofertas">
-        <h1 class="text_titles">Galería de ofertas</h1>
+        <!-- <h1 class="text_titles">Galería de ofertas</h1> -->
         <!-- Carousel -->
 				<section class="carousel" id="carrousel">
 					<div class="reel">
@@ -417,7 +348,148 @@
 
 <!-- Footer -->
     <div class="footer" id="social">
+    <!-- Footer -->
+<div id="footer">
+    <div class="container">
+    <div class="row">
     
+      <!-- Tweets -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
+          </header>
+          <ul class="divided">
+            <li>
+              <article class="tweet">
+                Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
+                <span class="timestamp">5 minutes ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Hendrerit rutrum quisque.
+                <span class="timestamp">30 minutes ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
+                <span class="timestamp">3 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
+                <span class="timestamp">5 hours ago</span>
+              </article>
+            </li>
+          </ul>
+        </section>
+    
+      <!-- Posts -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
+          </header>
+          <ul class="divided">
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Nisl fermentum integer</a></h3>
+                </header>
+                <span class="timestamp">3 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Phasellus portitor lorem</a></h3>
+                </header>
+                <span class="timestamp">6 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Magna tempus consequat</a></h3>
+                </header>
+                <span class="timestamp">Yesterday</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Feugiat lorem ipsum</a></h3>
+                </header>
+                <span class="timestamp">2 days ago</span>
+              </article>
+            </li>
+          </ul>
+        </section>
+    
+      <!-- Photos -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
+          </header>
+          <div class="row gtr-25">
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+            </div>
+          </div>
+        </section>
+    
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-12">
+    
+        <!-- Contact -->
+          <section class="contact">
+            <header>
+              <h3>Nisl turpis nascetur interdum?</h3>
+            </header>
+            <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+            <ul class="icons">
+              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+              <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+              <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+            </ul>
+          </section>
+          <footer>
+            <a href="#init" class="scrolly btn_pri">Inicio</a>
+          </footer>
+    
+        <!-- Copyright -->
+          <div class="copyright">
+            <ul class="menu">
+              <li>&copy; DetergentesQueen. Derechos reservados.</li><li>Diseñado: <a href="https://www.linkedin.com/in/klyswer-oliva-7a8793107/">Klyswer Oliva</a></li>
+            </ul>
+          </div>
+    
+      </div>
+    
+    </div>
+    </div>
+    </div>
     </div>
 
 <!-- modal Contacto -->

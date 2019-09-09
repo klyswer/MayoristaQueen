@@ -1,10 +1,18 @@
 
 /* clases */
-.beneficios::after{
-    content: "";
-    width: 100%;
-    border-top:outset 8px #0e023b;
+.beneficios{
+    &:before{
+        content: "";
+        width: 100%;
+        border-top:dotted 1px #0e023b;
+    }
+    &:after{
+        content: "";
+        width: 100%;
+        border-top:dotted 1px #0e023b;
+    }
 }
+
 /* .beneficios_container::before{
     content: "";
     width: 100%;

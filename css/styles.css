@@ -1,10 +1,15 @@
 @charset "UTF-8";
 /* clases */
 @import url("fontawesome-all.min.css");
-.beneficios::after {
+.beneficios:before {
   content: "";
   width: 100%;
-  border-top: outset 8px #0e023b; }
+  border-top: dotted 1px #0e023b; }
+
+.beneficios:after {
+  content: "";
+  width: 100%;
+  border-top: dotted 1px #0e023b; }
 
 /* .beneficios_container::before{
     content: "";
@@ -85,12 +90,28 @@
 
 .header {
   background: #0e023b;
-  max-height: 30px; }
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  max-height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px); }
 
 .header div {
   font-size: 80%;
   font-weight: 600;
   color: aliceblue; }
+
+#myBtn:hover {
+  color: #ef8376;
+  border-bottom-color: transparent;
+  cursor: pointer;
+  -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; }
 
 /* .header::after{
     content: "+56 9 7712 4057";
@@ -133,8 +154,13 @@
 
 .menu {
   width: 100%;
+  position: fixed;
+  z-index: 999;
   border-radius: 52% 48% 50% 50% / 0% 0% 100% 100%;
-  height: 120px; }
+  height: 120px;
+  margin-top: 20px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
 
 .contenedor-menu {
   width: 80%;
@@ -232,12 +258,14 @@
 
 /* The Close Button */
 .close {
+  position: relative;
+  z-index: 2000;
   color: #0e023b;
   float: right;
   font-size: 28px;
   font-weight: bold; }
   .close:hover, .close:focus {
-    color: black;
+    color: #c91d1d;
     text-decoration: none;
     cursor: pointer; }
 
@@ -285,20 +313,48 @@
   width: 60%;
   min-height: 500px; }
 
+.formulario {
+  width: 80%; }
+  .formulario .input_sets {
+    width: 90%; }
+    .formulario .input_sets input[type="submit"] {
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      border: solid 2px white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      background: transparent;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .formulario .input_sets input[type="submit"]:hover {
+        margin-left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border: inset 3px #bcff03;
+        color: #bcff03;
+        -webkit-box-shadow: 4px 4px 4px 2px rgba(188, 255, 3, 0.2);
+        box-shadow: 4px 4px 4px 2px rgba(188, 255, 3, 0.2);
+        border-radius: 20px;
+        font-weight: 900; }
+
 .modal-footer {
   color: #0e023b; }
 
-.inpunt_group {
+.input_group {
   margin-bottom: 10px; }
-  .inpunt_group input[type="text"], .inpunt_group [type="email"] {
+  .input_group input[type="text"], .input_group [type="email"] {
     font-size: 14px;
     outline: none;
     background: none;
     border: none;
     border-radius: 0;
-    border-bottom: #31023b 2px solid;
+    border-bottom: #ffffff 1px solid;
     width: 100%; }
-    .inpunt_group input[type="text"]:active, .inpunt_group input[type="text"]:focus, .inpunt_group [type="email"]:active, .inpunt_group [type="email"]:focus {
+    .input_group input[type="text"]:active, .input_group input[type="text"]:focus, .input_group [type="email"]:active, .input_group [type="email"]:focus {
       outline: none;
       background: transparent;
       border-bottom: #31023b 2px solid; }
@@ -308,16 +364,22 @@
   text-decoration: none;
   padding: .5em 1em;
   color: white;
-  background: #0059ff; }
+  background: #0059ff;
+  border-radius: 20px;
+  font-weight: 200; }
   .btn_pri:hover {
     background: rgba(0, 89, 255, 0.6); }
+  .btn_pri:hover {
+    color: white;
+    font-weight: 600; }
 
 .btn_sec {
   display: inline-block;
   text-decoration: none;
   padding: .5em 1em;
   color: white;
-  background: #c300ff; }
+  background: #c300ff;
+  border-radius: 100%; }
   .btn_sec:hover {
     background: rgba(195, 0, 255, 0.6); }
 

@@ -106,7 +106,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #483949;
+		color: #1e121f;
 		line-height: 1.25em;
 	}
 
@@ -1936,10 +1936,10 @@ input, select, textarea {
 /* Form */
 
 	form label {
-		display: block;
+		/* display: block; */
 		font-weight: 400;
-		color: #483949;
-		margin: 0 0 1em 0;
+		color: #ffffff;
+		/* margin: 0 0 1em 0; */
 	}
 
 	form input[type="text"],
@@ -2452,10 +2452,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		font-size: 14px;
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
+		background: #040b1f;
 		color: #fff;
 	}
 

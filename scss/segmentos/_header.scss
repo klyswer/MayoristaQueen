@@ -1,11 +1,24 @@
 .header{
     background: #0e023b;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
     max-height: 30px;
+    box-sizing: border-box;
+    transform: translateY(-10px)
 }
 .header div{
     font-size: 80%;
     font-weight: 600;
     color: aliceblue;
+}
+#myBtn{
+    &:hover{
+        color: #ef8376;
+        border-bottom-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    }
 }
 /* .header::after{
     content: "+56 9 7712 4057";

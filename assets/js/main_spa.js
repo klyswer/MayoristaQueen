@@ -26,7 +26,9 @@ window.onclick = function(e) {
 }
 
 
-// Slick
+// Slick 
+
+  // Slider
 
 $('.fade').slick({
     dots: true,
@@ -40,7 +42,37 @@ $('.fade').slick({
     cssEase: 'linear'
   });
 
-
+  // Slider contactenos
+  $('.slider_center').slick({
+    centerMode: true,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    // mobileFirst: true,
+    autoplay: true,
+    centerPadding: '20px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
 
 // $('.scrolly').scrolly();
