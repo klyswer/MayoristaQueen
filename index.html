@@ -1,383 +1,513 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Extracto</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="homepage is-preload">
-<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+        <!-- slick.js -->
+        <link rel="stylesheet" type="text/css" href="./Library/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./Library/slick/slick-theme.css">
+        
+        <title>Comercializadora Queen</title>
+    </head>
+
+<body>
+  <div id="init"></div>
 <!-- Header -->
-<div id="header">
+    <div class="header d-flex justify-r align-c">
+        <div class="m-r-2">Telefono de Contacto +56977124057</div>
+        <span></span>
+    </div>
 
-<!-- Inner -->
-<div class="inner">
-	<header>
-		<h1><a href="index.html" id="logo">Helios</a></h1>
-		<hr />
-		<p>Otro website basado en template helios</p>
-	</header>
-	
-</div>
+<!-- Menu -->
+    <div class="menu rosa_menu verde_menu azul_menu d-flex justify-c align-c"> 
+        <div class="contenedor-menu d-flex align-c">
+            <div class="logo"> 
+              <img src="images/logo.png" alt="">
+            </div>
+            <nav class="opciones d-flex justify-sb">
 
-<!-- Nav -->
-<nav id="nav">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li>
-			<a href="#">Dropdown</a>
-			<ul>
-				<li><a href="#">Lorem ipsum dolor</a></li>
-				<li><a href="#">Magna phasellus</a></li>
-				<li><a href="#">Etiam dolore nisl</a></li>
-				<li>
-					<a href="#">And a submenu &hellip;</a>
-					<ul>
-						<li><a href="#">Lorem ipsum dolor</a></li>
-						<li><a href="#">Phasellus consequat</a></li>
-						<li><a href="#">Magna phasellus</a></li>
-						<li><a href="#">Etiam dolore nisl</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Veroeros feugiat</a></li>
-			</ul>
-		</li>
-		<li><a href="">Left Sidebar</a></li>
-		<li><a href="">Right Sidebar</a></li>
-		<li><a href="#carrousel" class="scrolly">No Sidebar</a></li>
-	</ul>
-</nav>
+              <div class="item-menu d-flex justify-c align-c f_flow_col">
+                  <img src="images/home21white.svg" width="40px" alt="">
+                  <a class="scrolly" href="#init">Inicio</a>
+              </div>
+              
+              <div class="item-menu d-flex justify-c align-c f_flow_col">
+                  <a href="#productos_gal" class="scrolly" href="">Productos</a>
+                  <img src="images/shopping-cart1.svg" width="40px" alt="">
+              </div>
 
-</div>
+              <div class="item-menu d-flex justify-c align-c f_flow_col">
+                  <img src="images/supermarket-ofert.svg" width="50px" alt="">
+                  <a href="#ofertas" class="scrolly" href="">Ofertas</a>
+                  
+              </div>
 
-<!-- Banner -->
-<section id="banner">
-<header>
-<h2>Hi. You're looking at <strong>Helios</strong>.</h2>
-<p>
-	A (free) responsive site template by <a href="">HTML5 UP</a>.
-	Built with HTML5/CSS3 and released under the <a href="">CCA</a> license.
-</p>
-</header>
-</section>
+              <div class="item-menu d-flex justify-c align-c f_flow_col" id="myBtn">
+                  <div id="myBtn">Contáctenos</div>
+                  <img id="myBtn" src="images/send.svg" width="40px" alt="">
+              </div>
 
-<!-- Carousel -->
-<section class="carousel" id="carrousel">
-<div class="reel">
+              <div class="item-menu d-flex justify-c align-c f_flow_col" >
+                  <img src="images/social-media1.svg" width="40px" alt="">
+                  <a href="#social" class="scrolly" href="">Social</a>
+              </div>
+                
+            </nav>
+        </div>
+    </div>
 
-<article>
-	<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Pulvinar sagittis congue</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
+<!-- Modal content -->
+<!-- The Modal -->
+<div id="myModal" class="modal disp_none ">
 
-<article>
-	<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Fermentum sagittis proin</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
+    <div class="modal-content">
 
-<article>
-	<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Varius magnis sollicitudin</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Pulvinar sagittis congue</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Fermentum sagittis proin</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-<article>
-	<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-	<header>
-		<h3><a href="#">Varius magnis sollicitudin</a></h3>
-	</header>
-	<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-</article>
-
-</div>
-</section>
-
-<!-- Main -->
-<div class="wrapper style2">
-
-<article id="main" class="container special">
-<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-<header>
-	<h2><a href="#">Sed massa imperdiet magnis</a></h2>
-	<p>
-		Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim
-		pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.
-	</p>
-</header>
-<p>
-	Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-	posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-	sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam
-	mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan
-	lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-	consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-	interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-	natoque aenean scelerisque.
-</p>
-<footer>
-	<a href="#" class="button">Continue Reading</a>
-</footer>
-</article>
-
-</div>
-
-<!-- Features -->
-<div class="wrapper style1">
-
-<section id="features" class="container special">
-<header>
-	<h2>Morbi ullamcorper et varius leo lacus</h2>
-	<p>Ipsum volutpat consectetur orci metus consequat imperdiet duis integer semper magna.</p>
-</header>
-<div class="row">
-	<article class="col-4 col-12-mobile special">
-		<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-		<header>
-			<h3><a href="#">Gravida aliquam penatibus</a></h3>
-		</header>
-		<p>
-			Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-			porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-		</p>
-	</article>
-	<article class="col-4 col-12-mobile special">
-		<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-		<header>
-			<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-		</header>
-		<p>
-			Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-			porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-		</p>
-	</article>
-	<article class="col-4 col-12-mobile special">
-		<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-		<header>
-			<h3><a href="#">Magna laoreet et aliquam</a></h3>
-		</header>
-		<p>
-			Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-			porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-		</p>
-	</article>
-</div>
-</section>
+        <div class="modal-body">
+            <div class="modal_rigth d-flex justify-c">
+              <form action="" class="formulario m-b-2" name="form_contacto" method="POST" autocomplete="off">
+                <div class="input_sets">
+                  <div class="input_group m-b">
+					<label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required> 
+                    
+                  </div>
+                  <div class="input_group m-b">
+					<label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="opcional">
+                    
+                  </div>
+                  <div class="input_group m-b">
+					<label for="cel">Teléfono</label>
+                    <input type="text" id="cel" name="cel" required>
+                    
+                  </div>
+                  <div class="input_box m-b-2">
+					<label for="">Mensaje</label>
+                    <input type="text" id="" name="">
+                    
+                  </div>
+				          <input class="btn_submit" type="submit" id="btn_submit" value="Consultar" aria-placeholder="Desc
+				  riba su consulta en este campo">
+                </div>
+              </form>
+            </div>
+            <div class="modal_left">
+						<div class="modal-header">
+							<span class="close" title="Salir">&times;</span>
+							
+						</div>
+				<div class="container">
+					    <div class="slider">
+							<!-- <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button> -->
+								<section class="slider_center slider">
+										<div>
+											<div class="hero-image">
+												<div class="hero-text">
+												  <h1 style="font-size:50px">Detergentes Queen</h1>
+												  <h3>Distribuidora</h3>
+												  <button class="btn_pri">Conctactanos</button>
+												</div>
+											</div>
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/home2.svg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det1.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det2.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="http://placehold.it/350x100?text=4"> -->
+										  <!-- <img src="images/Det4.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det5.jpg"> -->
+										</div>
+										<div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button class="btn_pri">Conctactanos</button>
+                            </div>
+                          </div>
+										  <!-- <img src="images/Det6.jpg"> -->
+										</div>
+					
+									  </section>
+									  <!-- <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button> -->
+						</div>
+				</div>
+            </div>
+        </div>        
+    </div>
 
 </div>
+<!-- Slider -->
+    <div class="slider" id="slider">
+
+            <section class="fade slider">
+                    <div>
+                        <div class="hero-image">
+                            <div class="hero-text">
+                              <h1 style="font-size:50px">Detergentes Queen</h1>
+                              <h3>Distribuidora</h3>
+                              <button>Conctactanos</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div>
+                      <img src="images/home2.svg">
+                    </div>
+                    <div>
+                      <img src="images/Det1.jpg">
+                    </div>
+                    <div>
+                      <img src="images/Det2.jpg">
+                    </div>
+                    <div>
+                      <!-- <img src="http://placehold.it/350x100?text=4"> -->
+                      <img src="images/Det4.jpg">
+                    </div>
+                    <div>
+                      <img src="images/Det5.jpg">
+                    </div>
+                    <div>
+                      <img src="images/Det6.jpg">
+                    </div>
+
+                  </section>
+    </div>
+
+<!-- Beneficios -->
+    <div class="beneficios d-flex align-c f_flow_col m-t-4 m-b-4">
+
+      <div class="text_titles m-t-2 m-b-2">Te ofrecemos</div>
+
+      <div class="beneficios_container d-flex justify-sb align-c m-b-4">
+
+      <!-- Estacionamiento -->
+        <div class="beneficios_item bg_1">
+            <img src="images/parking20.svg" alt="">
+          <!-- <img src="images/parking_r2.svg" alt=""> -->
+        </div>
+
+      <!-- Despacho -->
+        <div class="beneficios_item bg_2">
+          
+          <img src="images/automobile2.svg" alt="">
+        </div>
+
+      <!-- Variedad -->
+        <div class="beneficios_item bg_3">
+            <img src="images/online-store1.svg" alt="">
+            <!-- <img src="images/shopping-store.svg" alt=""> -->
+        </div>
+        
+      </div>
+    </div>
+
+<!-- Carousel Productos -->
+
+    <div class="Productos d-flex justify-c align-c m-t-4 m-b-4" >
+      <h1 class="text_titles" id="productos_gal">Galería de productos</h1>
+      
+    </div>
+
+<!-- Carousel Ofertas -->
+    <div class="ofertas d-flex justify-c align-c m-t-4 m-b-4" id="ofertas">
+        <!-- <h1 class="text_titles">Galería de ofertas</h1> -->
+        <!-- Carousel -->
+				<section class="carousel" id="carrousel">
+					<div class="reel">
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Pulvinar sagittis congue</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Fermentum sagittis proin</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Ultrices urna sit lobortis</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Varius magnis sollicitudin</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Pulvinar sagittis congue</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Fermentum sagittis proin</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Ultrices urna sit lobortis</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Varius magnis sollicitudin</a></h3>
+							</header>
+							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+						</article>
+
+					</div>
+				</section>
+    </div>
 
 <!-- Footer -->
+    <div class="footer" id="social">
+    <!-- Footer -->
 <div id="footer">
-<div class="container">
-<div class="row">
+    <div class="container">
+    <div class="row">
+    
+      <!-- Tweets -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
+          </header>
+          <ul class="divided">
+            <li>
+              <article class="tweet">
+                Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
+                <span class="timestamp">5 minutes ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Hendrerit rutrum quisque.
+                <span class="timestamp">30 minutes ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
+                <span class="timestamp">3 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="tweet">
+                Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
+                <span class="timestamp">5 hours ago</span>
+              </article>
+            </li>
+          </ul>
+        </section>
+    
+      <!-- Posts -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
+          </header>
+          <ul class="divided">
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Nisl fermentum integer</a></h3>
+                </header>
+                <span class="timestamp">3 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Phasellus portitor lorem</a></h3>
+                </header>
+                <span class="timestamp">6 hours ago</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Magna tempus consequat</a></h3>
+                </header>
+                <span class="timestamp">Yesterday</span>
+              </article>
+            </li>
+            <li>
+              <article class="post stub">
+                <header>
+                  <h3><a href="#">Feugiat lorem ipsum</a></h3>
+                </header>
+                <span class="timestamp">2 days ago</span>
+              </article>
+            </li>
+          </ul>
+        </section>
+    
+      <!-- Photos -->
+        <section class="col-4 col-12-mobile">
+          <header>
+            <h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
+          </header>
+          <div class="row gtr-25">
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+            </div>
+          </div>
+        </section>
+    
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-12">
+    
+        <!-- Contact -->
+          <section class="contact">
+            <header>
+              <h3>Nisl turpis nascetur interdum?</h3>
+            </header>
+            <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+            <ul class="icons">
+              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+              <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+              <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+            </ul>
+          </section>
+          <footer>
+            <a href="#init" class="scrolly btn_pri">Inicio</a>
+          </footer>
+    
+        <!-- Copyright -->
+          <div class="copyright">
+            <ul class="menu">
+              <li>&copy; DetergentesQueen. Derechos reservados.</li><li>Diseñado: <a href="https://www.linkedin.com/in/klyswer-oliva-7a8793107/">Klyswer Oliva</a></li>
+            </ul>
+          </div>
+    
+      </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
 
-	<!-- Tweets -->
-		<section class="col-4 col-12-mobile">
-			<header>
-				<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
-			</header>
-			<ul class="divided">
-				<li>
-					<article class="tweet">
-						Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
-						<span class="timestamp">5 minutes ago</span>
-					</article>
-				</li>
-				<li>
-					<article class="tweet">
-						Hendrerit rutrum quisque.
-						<span class="timestamp">30 minutes ago</span>
-					</article>
-				</li>
-				<li>
-					<article class="tweet">
-						Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
-						<span class="timestamp">3 hours ago</span>
-					</article>
-				</li>
-				<li>
-					<article class="tweet">
-						Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
-						<span class="timestamp">5 hours ago</span>
-					</article>
-				</li>
-			</ul>
-		</section>
+<!-- modal Contacto -->
+    <div class="contacto">
+      <!-- <img src="images/backward.svg" width="30px" alt="">
+      <img src="images/forward.svg" width="30px" alt=""> -->
+    </div>
 
-	<!-- Posts -->
-		<section class="col-4 col-12-mobile">
-			<header>
-				<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
-			</header>
-			<ul class="divided">
-				<li>
-					<article class="post stub">
-						<header>
-							<h3><a href="#">Nisl fermentum integer</a></h3>
-						</header>
-						<span class="timestamp">3 hours ago</span>
-					</article>
-				</li>
-				<li>
-					<article class="post stub">
-						<header>
-							<h3><a href="#">Phasellus portitor lorem</a></h3>
-						</header>
-						<span class="timestamp">6 hours ago</span>
-					</article>
-				</li>
-				<li>
-					<article class="post stub">
-						<header>
-							<h3><a href="#">Magna tempus consequat</a></h3>
-						</header>
-						<span class="timestamp">Yesterday</span>
-					</article>
-				</li>
-				<li>
-					<article class="post stub">
-						<header>
-							<h3><a href="#">Feugiat lorem ipsum</a></h3>
-						</header>
-						<span class="timestamp">2 days ago</span>
-					</article>
-				</li>
-			</ul>
-		</section>
-
-	<!-- Photos -->
-		<section class="col-4 col-12-mobile">
-			<header>
-				<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
-			</header>
-			<div class="row gtr-25">
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
-				</div>
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-				</div>
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-				</div>
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-				</div>
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-				</div>
-				<div class="col-6">
-					<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
-				</div>
-			</div>
-		</section>
-
-</div>
-<hr />
-<div class="row">
-	<div class="col-12">
-
-		<!-- Contact -->
-			<section class="contact">
-				<header>
-					<h3>Nisl turpis nascetur interdum?</h3>
-				</header>
-				<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-				</ul>
-			</section>
-			<footer>
-				<a href="#nav" class="button circled scrolly">Start</a>
-			</footer>
-
-		<!-- Copyright -->
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-
-	</div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+<script src="./Library/jquery/jquery.min.js" type="text/javascript"></script>
+<!-- <script src="./Library/jquery/jquery.scrolly.min.js" type="text/javascript"></script> -->
+<script src="./Library/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./assets/js/main_spa.js" type="text/javascript"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 </body>
 </html>
