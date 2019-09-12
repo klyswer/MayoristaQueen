@@ -73,9 +73,10 @@
 	// Carousels.
 		$('.carousel').each(function() {
 
+
 			var	$t = $(this),
-				$forward = $('<span class="forward"><img src="images/forward.svg" width="30px" alt=""></span>'),
-				$backward = $('<span class="backward"><img src="images/backward.svg" width="30px" alt=""></span>'),
+				$forward = $('<span class="forward"></span>'),
+				$backward = $('<span class="backward"></span>'),
 				$reel = $t.children('.reel'),
 				$items = $reel.children('article');
 

@@ -1,13 +1,17 @@
 $(document).ready(function(){
 
-// $('#myBtn').click(function(){
+// $('.myBtn').click(function(){
 //   alert("llegue");
 // });
+
+// Crear evento eventlistener que verifique el cambio de tamaño de la ventana, cuando se produzca el cambio a 747px que realize este evento.$('#myBtn').addClass('myBtn');
+$('#myBtn').addClass('myBtn');
+
 
 // modal script
 var modal =$('.modal'); 
 // abrir modal
-$('#myBtn').click(function(){
+$('.myBtn').click(function(){
   $('.modal').removeClass('disp_none');
   $('.modal').addClass('disp_flex');
 });
