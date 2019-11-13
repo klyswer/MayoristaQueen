@@ -2,33 +2,15 @@
 /* clases */
 @import url("fontawesome-all.min.css");
 .beneficios {
-  background: #001494;
-  background: -moz-linear-gradient(left, #001494 0%, rgba(28, 4, 205, 0.88) 31%, rgba(20, 95, 245, 0.79) 53%, rgba(120, 126, 247, 0.68) 80%, rgba(122, 202, 255, 0.6) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #001494), color-stop(31%, rgba(28, 4, 205, 0.88)), color-stop(53%, rgba(20, 95, 245, 0.79)), color-stop(80%, rgba(120, 126, 247, 0.68)), color-stop(100%, rgba(122, 202, 255, 0.6)));
-  background: -webkit-linear-gradient(left, #001494 0%, rgba(28, 4, 205, 0.88) 31%, rgba(20, 95, 245, 0.79) 53%, rgba(120, 126, 247, 0.68) 80%, rgba(122, 202, 255, 0.6) 100%);
-  background: -o-linear-gradient(left, #001494 0%, rgba(28, 4, 205, 0.88) 31%, rgba(20, 95, 245, 0.79) 53%, rgba(120, 126, 247, 0.68) 80%, rgba(122, 202, 255, 0.6) 100%);
-  background: -ms-linear-gradient(left, #001494 0%, rgba(28, 4, 205, 0.88) 31%, rgba(20, 95, 245, 0.79) 53%, rgba(120, 126, 247, 0.68) 80%, rgba(122, 202, 255, 0.6) 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#001494), color-stop(31%, rgba(28, 4, 205, 0.88)), color-stop(53%, rgba(20, 95, 245, 0.79)), color-stop(80%, rgba(120, 126, 247, 0.68)), to(rgba(122, 202, 255, 0.6)));
-  background: linear-gradient(to right, #001494 0%, rgba(28, 4, 205, 0.88) 31%, rgba(20, 95, 245, 0.79) 53%, rgba(120, 126, 247, 0.68) 80%, rgba(122, 202, 255, 0.6) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001494', endColorstr='#7acaff', GradientType=1 );
-  border-radius: 52% 48% 54% 46% / 54% 54% 46% 46%;
-  border: inset #0261a0 5px; }
+  background: #001494; }
   .beneficios:before {
     content: "";
-    width: 200px;
-    height: 200px;
-    border: outset 20px #0261a0;
-    border-radius: 100%;
-    position: relative;
-    right: 500px; }
+    width: 100%;
+    border-top: inset 10px #01156d; }
   .beneficios:after {
     content: "";
-    width: 200px;
-    height: 200px;
-    border: outset 20px #0261a0;
-    border-radius: 100%;
-    position: relative;
-    left: 500px; }
+    width: 100%;
+    border-top: inset 80px #01156d; }
 
 .beneficio {
   color: white; }
@@ -442,8 +424,8 @@
 
 .img_bg_gal img {
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
