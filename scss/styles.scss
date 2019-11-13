@@ -21,6 +21,7 @@ $color3: #b3ff00;
 $color4: #ff006a;
 $white: white;
 
+
 // mixings
 
 
@@ -171,15 +172,23 @@ body {
         margin-top: 250;
     }
 /* Texty */
-
+// #texto {
+//   letter-spacing: 2pt;      /* para separar entgre letras */
+//   word-spacing: 5pt;        /* para separacion entre palabras */  
+//   line-height: 20pt;        /* para la separacion entre lineas */ 
+//   text-indent: 30pt;        /* para sangrias */ 
+//   }   
 .text_titles{
     color: #090127;
     font-size: 175%;
     font-weight: 500;
-
+    & h1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 130%;
+      letter-spacing: 2pt;
+    }
     
 }
 
-
 /* Other styles */
-    

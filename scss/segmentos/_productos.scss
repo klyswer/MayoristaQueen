@@ -1,0 +1,116 @@
+$blue_dark: #021B79;
+$color1:rgba(0, 89, 255, 1);
+$color1_o:rgba(0, 89, 255, 0.6);
+
+// Backgroud
+
+.img_bg_gal{
+    background: #14b2ce;
+    // background: -webkit-linear-gradient(to right, #14b2ce, #033aff);
+    // background: linear-gradient(to right, #14b2ce, #033aff);
+    border: solid 2px white;
+}
+.img_bg_gal img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: inset 15px #021c79;
+}
+    /*------------------ Estilos para Galería -------------------*/
+    .galeria_container{
+        width: 100%;
+        }
+        .categorias{
+          width: 22%;
+          z-index: 100;
+          background: $blue_dark;
+        }
+        .categorias .item_cat{
+          width: 90%;
+          align-items: center;
+          border-radius: 100px;
+        }
+      
+        .list-group h3{ //titulo menú galería
+          font-weight: bold;
+          color: white;
+          font-size: 120%;
+        }
+        
+        /* productos--------------- */
+        .products_list{
+          width: 90%;
+          /* border:solid #36A0FF; */
+          flex-wrap: wrap;
+        }
+        .products_list .product_item{
+          transition: all .4s;
+        }
+        .active_cat{
+          color: white !important;
+          font-weight: 900;
+          background: $color1;
+          &:hover{
+            color: white !important;
+            font-weight: 900;
+            background: $color1_o;
+          }
+        }
+      
+        .capa_imagen_ajustada{
+          -moz-background-size: 100% 100%; /*Firefox 3.6*/
+          -o-background-size: 100% 100%; /*opera*/
+          -webkit-background-size: 100% 100%; /*Safari*/
+          background-size: 100% 100%; /*estandar css3*/
+        }
+      
+        @media screen and (max-width:350px){
+          /* Galería */
+            .categorias {
+              width: 52% !important;
+            }
+        }
+        @media screen and (max-width:575px){
+            /* Galería */
+            .categorias {
+              width: 44%;
+            }
+            
+        }
+        @media screen and (min-width:576px){
+            /* Galería */
+            .categorias {
+              width: 36%;
+            }
+           
+        }
+        @media screen and (min-width:702px){
+            /* Galería */
+            .categorias {
+              width: 34%;
+            }
+            
+          }
+            @media screen and (min-width:768px){
+              /* Galería */
+              .categorias {
+                width: 30%;
+              }
+              
+            } 
+            @media screen and (min-width:992px){
+              /* Galería */
+              .categorias {
+                width: 22%;
+              }
+              
+            }
+            @media screen and (min-width:1200px){
+            /* Galería */
+            .categorias {
+              width: 22%;
+               }
+            }

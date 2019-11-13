@@ -71,7 +71,7 @@
 				});
 
 	// Carousels.
-		$('.carousel').each(function() {
+		$('.carousel_ofert').each(function() {
 
 
 			var	$t = $(this),

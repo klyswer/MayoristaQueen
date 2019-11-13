@@ -1,16 +1,45 @@
 
 /* clases */
 .beneficios{
+    // background:#0113b3;
+    background: rgba(0,20,148,1);
+    background: -moz-linear-gradient(left, rgba(0,20,148,1) 0%, rgba(28,4,205,0.88) 31%, rgba(20,95,245,0.79) 53%, rgba(120,126,247,0.68) 80%, rgba(122,202,255,0.6) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,20,148,1)), color-stop(31%, rgba(28,4,205,0.88)), color-stop(53%, rgba(20,95,245,0.79)), color-stop(80%, rgba(120,126,247,0.68)), color-stop(100%, rgba(122,202,255,0.6)));
+    background: -webkit-linear-gradient(left, rgba(0,20,148,1) 0%, rgba(28,4,205,0.88) 31%, rgba(20,95,245,0.79) 53%, rgba(120,126,247,0.68) 80%, rgba(122,202,255,0.6) 100%);
+    background: -o-linear-gradient(left, rgba(0,20,148,1) 0%, rgba(28,4,205,0.88) 31%, rgba(20,95,245,0.79) 53%, rgba(120,126,247,0.68) 80%, rgba(122,202,255,0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(0,20,148,1) 0%, rgba(28,4,205,0.88) 31%, rgba(20,95,245,0.79) 53%, rgba(120,126,247,0.68) 80%, rgba(122,202,255,0.6) 100%);
+    background: linear-gradient(to right, rgba(0,20,148,1) 0%, rgba(28,4,205,0.88) 31%, rgba(20,95,245,0.79) 53%, rgba(120,126,247,0.68) 80%, rgba(122,202,255,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001494', endColorstr='#7acaff', GradientType=1 );
+    // border-radius: 52% 48% 81% 19% / 61% 59% 41% 39%;
+    // border-radius: 100%;
+    border-radius:52% 48% 54% 46% / 54% 54% 46% 46% ; 
+    border: inset #0261a0 5px;
     &:before{
         content: "";
-        width: 100%;
-        border-top:dotted 1px #0e023b;
+        width: 200px;
+        height: 200px;
+        border:outset 20px #0261a0;
+        border-radius: 100%;
+        position: relative;
+        right: 500px;
     }
     &:after{
         content: "";
-        width: 100%;
-        border-top:dotted 1px #0e023b;
+        width: 200px;
+        height: 200px;
+        border:outset 20px #0261a0;
+        border-radius: 100%;
+        position: relative;
+        left: 500px;
     }
+    // &:after{
+    //     content: "";
+    //     width: 100%;
+    //     border-top:inset 20px #0261a0;
+    // }
+}
+.beneficio{
+color: white;
 }
 
 /* .beneficios_container::before{
